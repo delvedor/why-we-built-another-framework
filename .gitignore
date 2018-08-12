@@ -70,4 +70,4 @@ typings/
 yarn.lock
 package-lock.json
 
-dist
+index.html
