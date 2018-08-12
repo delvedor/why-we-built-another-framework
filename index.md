@@ -7,6 +7,25 @@ class align-right border-right
 
 ---
 
+# Hey!
+
+---
+
+# I’ve built a *new framework!*
+
+---
+
+# Inside we are using *Express*.
+
+---
+<!--
+class center center-image
+-->
+
+![astonished](images/astonished.gif)
+
+---
+
 # Two years ago*.*
 
 ---
@@ -45,25 +64,6 @@ console.log(stringify({
 ---
 
 # Express Hapi Restify Koa Micro Connect take-five total.js
-
----
-
-# Hey!
-
----
-
-# I’ve built a *new framework!*
-
----
-
-# Inside we are using *Express*.
-
----
-<!--
-class center center-image
--->
-
-![astonished](images/astonished.gif)
 
 ---
 <!--
@@ -144,6 +144,8 @@ Design goals*.*
 ---
 
 Every feature we put in core is something that *we must maintain*.
+
+<br/>
 
 Change it in the future could lead to massive *breaking changes* for the community.
 
@@ -280,6 +282,10 @@ Individuals making significant and valuable *contributions* are given commit-acc
 
 ---
 
+# Two years after*.*
+
+---
+
 # Community impact*.*
 
 ---
@@ -318,15 +324,11 @@ class boxed-em small
 # One plugin *every 10 days*
 
 ---
-
-# Two years after*.*
-
----
 <!--
 class small
 -->
 
-# *≥ 7500* stars
+# *≥ 7700* stars
 
 ---
 <!--
