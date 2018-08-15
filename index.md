@@ -229,6 +229,28 @@ class center small-image
 ![dag-fp-encapsulate](images/dag-fp-encapsulate.png)
 
 ---
+
+### *Encapsulation* enables many great things
+### such as custom `log-level` per plugin
+
+<br/>
+
+```js
+const fastify = require('fastify')()
+
+fastify.register(require('./api/v1'), {
+  prefix: '/v1',
+  logLevel: 'info'
+})
+
+fastify.register(require('./api/v2'), {
+  prefix: '/v2',
+  logLevel: 'debug'
+})
+
+```
+
+---
 <!--
 class center small-image
 -->
