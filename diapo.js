@@ -9,6 +9,7 @@ window.addEventListener('load', function () {
     )
   }
 
+  const progressBar = document.querySelector('#diapo-progress-bar')
   var body = document.body
   var initialBodyClass = body.className
   var slideDivs = nodeListToArray(document.querySelectorAll('body > div'))
@@ -105,11 +106,14 @@ window.addEventListener('load', function () {
 
   var printListener = window.matchMedia('print')
   printListener.addListener(onPrint)
-  document.addEventListener('click', onClick)
   document.addEventListener('keydown', onKeyDown)
   document.addEventListener('touchstart', onTouchStart)
   window.addEventListener('hashchange', onHashChange)
   window.addEventListener('resize', onResize)
+  window.addEventListener('click', mouseMove)
+  window.addEventListener('mousemove', mouseMove)
+  window.addEventListener('mousedown', mouseMove)
+  window.addEventListener('mouseup', mouseMove)
   window.diapo = diapo
 
   console.log(
@@ -280,6 +284,14 @@ window.addEventListener('load', function () {
     if (window.location.hash !== n) {
       window.location.hash = n
     }
+    updateProgressBar()
+  }
+
+  function updateProgressBar () {
+    const progress = diapo.current !== diapo.length - 1
+      ? (diapo.current / diapo.length) * 100
+      : 100
+    progressBar.style.width = `${progress}%`
   }
 
   function forward () {
@@ -403,11 +415,6 @@ window.addEventListener('load', function () {
       }
       subContainer.addEventListener('click', onClickSlide)
     })
-  }
-
-  function onClick (e) {
-    if (diapo.mode !== 'talk') return
-    if (e.target.tagName !== 'A') go((diapo.current + 1) % diapo.length)
   }
 
   function onKeyDown (e) {
@@ -542,5 +549,14 @@ window.addEventListener('load', function () {
       height = Math.ceil(width / ASPECT_RATIO)
     }
     resizeTo(slideDivs[diapo.current], width, height)
+  }
+
+  var timeout = null
+  function mouseMove () {
+    clearTimeout(timeout)
+    document.body.style.cursor = 'auto'
+    timeout = setTimeout(() => {
+      document.body.style.cursor = 'none'
+    }, 1000)
   }
 })

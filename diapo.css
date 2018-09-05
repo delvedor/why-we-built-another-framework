@@ -1,7 +1,7 @@
 /***** FONTS *****/
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
 /***** COMMON *****/
 
@@ -10,13 +10,15 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
   margin: 0;
   padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
 }
 
 h1, h2, h3, p {
@@ -57,13 +59,25 @@ div.slide-container {
 
 div.slide {
   box-sizing: border-box;
-  cursor: pointer;
-  cursor: hand;
   padding: 4%;
 }
 
 div.slide.small {
   padding: 15%;
+}
+
+div.slide.copyright-right p:last-child {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  font-size: 25px !important;
+}
+
+div.slide.copyright-left p:last-child {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  font-size: 25px !important;
 }
 
 /* normally not good, but ok in context of full screen directional navigation */
@@ -121,6 +135,22 @@ body.jump-mode div.slide-container:hover {
   border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
+#diapo-progress-bar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+#diapo-progress-bar {
+  height: 5px;
+  width: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  transition: width 0.5s;
+}
+
 /***** THEME *****/
 
 /* Colors:
@@ -167,6 +197,10 @@ em {
 
 .dark div.boxed-em em {
   color: #f9f9f9;
+  background-color: #e61a7a;
+}
+
+#diapo-progress-bar {
   background-color: #e61a7a;
 }
 
@@ -300,7 +334,7 @@ em {
   font-size: initial;
 }
 
-.border-left {
+.border-left h1 {
   border-left: 5px solid white;
   padding-left: 20px;
 }
@@ -338,7 +372,7 @@ div.row {
   align-items: center;
 }
 
-div.json-faster > h1 {
+div.json-faster > h1, div.async-plugin > h2 {
   border: 8px #fff solid;
   padding: 20px 30px;
   transform: rotate(-10deg);
@@ -372,4 +406,13 @@ body.light div.elastic-logo p img:nth-child(odd) {
 
 body.light div.elastic-logo p img:nth-child(even) {
   display: none;
+}
+
+div.slide.very-small {
+  padding: 28%;
+}
+
+div.slide.team p {
+  padding-right: 10%;
+  padding-left: 10%;
 }
