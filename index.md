@@ -1,19 +1,44 @@
 <!--
 bodyclass intro-background
-class align-right border-right
+class align-right border-right copyright-right
 -->
 
 # Why we built another framework
+[@delvedor](https://twitter.com/delvedor)
 
 ---
+<!--
+class technical-debt boxed-em
+-->
+
+# Or you die as *innovator*,
+# or you live long enough to become the *technical debt*.
+
+---
+<!--
+class small nobreak
+-->
+
+Can we avoid that*?*
+
+---
+<!--
+class small
+-->
 
 # Hey!
 
 ---
+<!--
+class small
+-->
 
 # I’ve built a *new framework!*
 
 ---
+<!--
+class small
+-->
 
 # Inside we are using *Express*.
 
@@ -27,6 +52,10 @@ class center center-image
 ---
 
 # Two years ago*.*
+
+---
+
+# Express Hapi Restify Koa Micro Connect take-five total.js
 
 ---
 <!--
@@ -60,25 +89,6 @@ console.log(stringify({
 ```
 
 # 2-3x *faster*
-
----
-
-# Express Hapi Restify Koa Micro Connect take-five total.js
-
----
-<!--
-class technical-debt boxed-em
--->
-
-# Or you die as *innovator*,
-# or you live long enough to become the *technical debt*.
-
----
-<!--
-class nobreak
--->
-
-Can we avoid that*?*
 
 ---
 <!--
@@ -142,10 +152,16 @@ Design goals*.*
 # As *light* as possible
 
 ---
+<!--
+class small
+-->
 
-Every feature we put in core is something that *we must maintain*.
+Every feature we implement in core is something that *we must maintain*.
 
-<br/>
+---
+<!--
+class small
+-->
 
 Change it in the future could lead to massive *breaking changes* for the community.
 
@@ -154,7 +170,7 @@ Change it in the future could lead to massive *breaking changes* for the communi
 class small nobreak
 -->
 
-How can we avoid this*?*
+How can we fix this*?*
 
 ---
 
@@ -171,9 +187,12 @@ fastify.register(
 ```
 
 ---
+<!--
+class row async-plugin
+-->
 
 ```js
-async function myPlugin (fastify, opts) {
+function myPlugin (fastify, opts, next) {
   // register other plugins
   fastify.register(...)
 
@@ -185,10 +204,14 @@ async function myPlugin (fastify, opts) {
 
   // add routes
   fastify.route(...)
+
+  next()
 }
 
 module.exports = myPlugin
 ```
+
+## *async await* is supported as well!
 
 ---
 <!--
@@ -240,14 +263,13 @@ const fastify = require('fastify')()
 
 fastify.register(require('./api/v1'), {
   prefix: '/v1',
-  logLevel: 'info'
+  logLevel: 'error'
 })
 
 fastify.register(require('./api/v2'), {
   prefix: '/v2',
   logLevel: 'debug'
 })
-
 ```
 
 ---
@@ -283,7 +305,7 @@ API that is *easy to use* and understand;
 
 <br/>
 
-Extensive and quality *documentation*;
+Extensive and quality *documentation* & *tooling*;
 
 <br/>
 
@@ -292,9 +314,28 @@ Extensive and quality *documentation*;
 ---
 
 Design goals*.*
+# *Long* Term Support
+
+---
+<!--
+class nobreak
+-->
+
+Minimum *six months* of active development<br/>from the release date.
+
+<br/>
+
+Additional six months of *security updates*<br/>after a new Major.
+
+---
+
+Design goals*.*
 # *Open* open source
 
 ---
+<!--
+class small
+-->
 
 Individuals making significant and valuable *contributions* are given commit-access to the project to contribute as they see fit*.*
 
@@ -305,6 +346,10 @@ Individuals making significant and valuable *contributions* are given commit-acc
 ---
 
 # Two years after*.*
+
+---
+
+# *Fastify* `v2` is coming*.*
 
 ---
 
@@ -329,14 +374,14 @@ class center-image
 class small
 -->
 
-# Currently, there are *74* officially recognized plugins
+# Currently, there are *78* officially recognized plugins
 
 ---
 <!--
 class small
 -->
 
-# *32* maintained by the core team
+# *33* maintained by the core team
 
 ---
 <!--
@@ -350,14 +395,14 @@ class boxed-em small
 class small
 -->
 
-# *≥ 7700* stars
+# *≥ 7900* stars
 
 ---
 <!--
 class small
 -->
 
-# *95* unique contributors
+# *100* unique contributors
 
 ---
 <!--
@@ -371,29 +416,32 @@ class small
 class small
 -->
 
-# *≥ 80* releases
+# *≥ 90* releases
 
 ---
 <!--
 class small
 -->
 
-# *≥ 1600* commits
+# *≥ 1700* commits
 
 ---
 <!--
-class small
+class small team
 -->
 
-# Core team: *eight awesome people*
+# Core team: *nine awesome people*
 
 <br/>
 
-[allevo](https://github.com/allevo) [delvedor](https://github.com/delvedor) [evanshortiss](https://github.com/evanshortiss) [lmammino](https://github.com/lmammino) [jsumners](https://github.com/jsumners) [mcollina](https://github.com/mcollina) [nwoltman](https://github.com/nwoltman) [starptech](https://github.com/starptech)
+[allevo](https://github.com/allevo) [delvedor](https://github.com/delvedor) [evanshortiss](https://github.com/evanshortiss) [lmammino](https://github.com/lmammino) [jsumners](https://github.com/jsumners) [mcollina](https://github.com/mcollina) [nwoltman](https://github.com/nwoltman) [starptech](https://github.com/starptech) [trivikr](https://github.com/trivikr)
 
 ---
+<!--
+class very-small center
+-->
 
-# Demo
+Demo*!*
 
 ---
 <!--
@@ -410,5 +458,10 @@ class elastic-logo small
 ![elastic-logo-dark](images/elastic-logo-dark.png)
 
 ---
+<!--
+bodyclass intro-background
+class copyright-right
+-->
 
 # Thanks*!*
+[@delvedor](https://twitter.com/delvedor)
