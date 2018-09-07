@@ -8,32 +8,34 @@ class align-right border-right copyright-right
 
 ---
 <!--
-class technical-debt boxed-em
+class center center-image copyright-right
 -->
 
-# Or you die as *innovator*,
-# or you live long enough to become the *technical debt*.
+![delvedor](images/delvedor.png)
+
+[@delvedor](https://twitter.com/delvedor)
 
 ---
 <!--
-class small nobreak
+class elastic-logo small
 -->
 
-Can we avoid that*?*
-
----
-<!--
-class small
--->
-
-# Hey!
+![elastic-logo-light](images/elastic-logo-light.png)
+![elastic-logo-dark](images/elastic-logo-dark.png)
 
 ---
 <!--
 class small
 -->
 
-# I’ve built a *new framework!*
+# Hej*!*
+
+---
+<!--
+class small
+-->
+
+# We’ve built a *new framework!*
 
 ---
 <!--
@@ -48,6 +50,21 @@ class center center-image
 -->
 
 ![astonished](images/astonished.gif)
+
+---
+<!--
+class technical-debt boxed-em
+-->
+
+# Or you die as *innovator*,
+# or you live long enough to become the *technical debt*.
+
+---
+<!--
+class small nobreak
+-->
+
+Can we avoid that*?*
 
 ---
 
@@ -93,8 +110,11 @@ console.log(stringify({
 ---
 <!--
 bodyclass fastify-background
+class copyright-right
 -->
 ![fastify-logo](images/fastify-white-landscape.png)
+
+[fastify.io](http://fastify.io/)
 
 ---
 
@@ -107,7 +127,7 @@ Design goals*.*
 
 ---
 <!--
-class center-image small
+class center center-image
 -->
 
 ![benchmarks](images/benchmarks.png)
@@ -122,8 +142,7 @@ Design goals*.*
 class small
 -->
 
-# Overhead:
-# the *price* you are paying for a set of *features*.
+**Overhead**:<br/>the *price* you are paying for a set of *features*.
 
 ---
 <!--
@@ -211,7 +230,7 @@ function myPlugin (fastify, opts, next) {
 module.exports = myPlugin
 ```
 
-## *async await* is supported as well!
+### *async await*<br/>is supported as well!
 
 ---
 <!--
@@ -252,6 +271,14 @@ class center small-image
 ![dag-fp-encapsulate](images/dag-fp-encapsulate.png)
 
 ---
+<!--
+class center small-image
+-->
+
+# Plugins: Real world
+![plugin-real-world](images/plugin-real-world.png)
+
+---
 
 ### *Encapsulation* enables many great things
 ### such as custom `log-level` per plugin
@@ -271,15 +298,6 @@ fastify.register(require('./api/v2'), {
   logLevel: 'debug'
 })
 ```
-
----
-<!--
-class center small-image
--->
-
-# Plugins: Real world
-![plugin-real-world](images/plugin-real-world.png)
-
 ---
 <!--
 class boxed-em
@@ -301,11 +319,11 @@ API that is *easy to use* and understand;
 
 <br/>
 
-*Painless* transition from monolith to microservices;
+Extensive and quality *documentation* & *tooling*;
 
 <br/>
 
-Extensive and quality *documentation* & *tooling*;
+*Painless* transition from monolith to microservices;
 
 <br/>
 
@@ -321,16 +339,20 @@ Design goals*.*
 class nobreak
 -->
 
-Minimum *six months* of active development<br/>from the release date.
+Minimum *six months* of active development<br/>from the release date;
 
 <br/>
 
-Additional six months of *security updates*<br/>after a new Major.
+Additional six months of *security updates*<br/>after a new Major release;
+
+<br/>
+
+Part of the Node.js's *CITGM* suite.
 
 ---
 
 Design goals*.*
-# *Open* open source
+# *OPEN* open source
 
 ---
 <!--
@@ -392,10 +414,17 @@ class boxed-em small
 
 ---
 <!--
+class center center-image
+-->
+
+![8k-stars](images/8k-stars.png)
+
+---
+<!--
 class small
 -->
 
-# *≥ 7900* stars
+# *8000*<br/><del style="color: #e61a7a"><span style="color: #fff">≥ 7900</span></del> stars
 
 ---
 <!--
@@ -438,24 +467,19 @@ class small team
 
 ---
 <!--
-class very-small center
+bodyclass intro-background
+class small
 -->
 
-Demo*!*
+# Did we make it*?*
 
 ---
 <!--
-bodyclass fastify-background
--->
-![fastify-logo](images/fastify-white-landscape.png)
-
----
-<!--
-class elastic-logo small
+bodyclass intro-background
+class small
 -->
 
-![elastic-logo-light](images/elastic-logo-light.png)
-![elastic-logo-dark](images/elastic-logo-dark.png)
+# Let us know*!*
 
 ---
 <!--
@@ -464,4 +488,7 @@ class copyright-right
 -->
 
 # Thanks*!*
+
+[fastify.io](http://fastify.io/)
+<br/>
 [@delvedor](https://twitter.com/delvedor)
