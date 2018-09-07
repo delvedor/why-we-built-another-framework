@@ -10,6 +10,7 @@ window.addEventListener('load', function () {
   }
 
   const progressBar = document.querySelector('#diapo-progress-bar')
+  const imagesElements = document.querySelectorAll('img')
   var body = document.body
   var initialBodyClass = body.className
   var slideDivs = nodeListToArray(document.querySelectorAll('body > div'))
@@ -325,6 +326,9 @@ window.addEventListener('load', function () {
         }
       }
       fontSize += step
+    })
+    imagesElements.forEach(element => {
+      element.style['max-height'] = window.innerHeight - 100 + 'px'
     })
   }
 

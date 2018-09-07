@@ -5,6 +5,10 @@
 
 /***** COMMON *****/
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 html {
   height: 100%;
 }
@@ -25,6 +29,10 @@ h1, h2, h3, p {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 a {
   color: #fff;
   text-decoration-skip: ink;
@@ -42,13 +50,6 @@ a {
 
 .nobreak {
   white-space: nowrap;
-}
-
-img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
 }
 
 div.slide-container {
@@ -372,7 +373,7 @@ div.row {
   align-items: center;
 }
 
-div.json-faster > h1, div.async-plugin > h2 {
+div.json-faster > h1, div.async-plugin > h3 {
   border: 8px #fff solid;
   padding: 20px 30px;
   transform: rotate(-10deg);
