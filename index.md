@@ -3,7 +3,7 @@ bodyclass intro-background
 class align-right border-right copyright-right
 -->
 
-# Why we built another framework
+# Building a future proof framework
 [@delvedor](https://twitter.com/delvedor)
 
 ---
@@ -28,21 +28,21 @@ class elastic-logo small
 class small
 -->
 
-# Hej*!*
+# Ciao*!*
 
 ---
 <!--
 class small
 -->
 
-# We’ve built a *new framework!*
+# We’ve built a *new framework*!
 
 ---
 <!--
 class small
 -->
 
-# Inside we are using *Express*.
+# Under the hood we are using *Express*.
 
 ---
 <!--
@@ -113,6 +113,23 @@ bodyclass fastify-background
 class copyright-right
 -->
 ![fastify-logo](images/fastify-white-landscape.png)
+
+[fastify.io](http://fastify.io/)
+
+---
+<!--
+class copyright-right
+-->
+
+```js
+const fastify = require('fastify')()
+
+fastify.get('/', async (request, reply) => {
+  return { hello: 'world' }
+})
+
+fastify.listen(3000)
+```
 
 [fastify.io](http://fastify.io/)
 
@@ -367,11 +384,37 @@ Individuals making significant and valuable *contributions* are given commit-acc
 
 ---
 
+Design goals*.*
+# *Security*
+
+
+---
+<!--
+class small
+-->
+
+Mandatory *2FA* for every member of the team;
+
+<br/>
+
+Every PR should be *reviewed* and *approved* by at least one member of the team;
+
+<br/>
+
+Every dependency should pass our *code review*;
+
+<br/>
+
+Only two persons are allowed to *release* a new version.
+
+---
+
 # Two years after*.*
 
 ---
 
-# *Fastify* `v2` is coming*.*
+# *Fastify* `v2`<br/><del style="color: #e61a7a"><span style="color: #fff">is coming</span></del> has come*.*
+[fastify.rocks/v2](https://fastify.rocks/v2)
 
 ---
 
@@ -396,14 +439,14 @@ class center-image
 class small
 -->
 
-# Currently, there are *78* officially recognized plugins
+# Currently, there are *87* officially recognized plugins
 
 ---
 <!--
 class small
 -->
 
-# *33* maintained by the core team
+# *34* maintained by the core team
 
 ---
 <!--
@@ -414,56 +457,49 @@ class boxed-em small
 
 ---
 <!--
-class center center-image
+class small
 -->
 
-![8k-stars](images/8k-stars.png)
+# *≥ 8700* stars
 
 ---
 <!--
 class small
 -->
 
-# *8000*<br/><del style="color: #e61a7a"><span style="color: #fff">≥ 7900</span></del> stars
+# *110* unique contributors
 
 ---
 <!--
 class small
 -->
 
-# *100* unique contributors
+# *≥ 450* forks
 
 ---
 <!--
 class small
 -->
 
-# *≥ 400* forks
+# *≥ 95* releases
 
 ---
 <!--
 class small
 -->
 
-# *≥ 90* releases
-
----
-<!--
-class small
--->
-
-# *≥ 1700* commits
+# *≥ 1800* commits
 
 ---
 <!--
 class small team
 -->
 
-# Core team: *nine awesome people*
+# Core team: *10 awesome people*
 
 <br/>
 
-[allevo](https://github.com/allevo) [delvedor](https://github.com/delvedor) [evanshortiss](https://github.com/evanshortiss) [lmammino](https://github.com/lmammino) [jsumners](https://github.com/jsumners) [mcollina](https://github.com/mcollina) [nwoltman](https://github.com/nwoltman) [starptech](https://github.com/starptech) [trivikr](https://github.com/trivikr)
+[allevo](https://github.com/allevo) [cemremengu](https://github.com/cemremengu) [delvedor](https://github.com/delvedor) [evanshortiss](https://github.com/evanshortiss) [lmammino](https://github.com/lmammino) [jsumners](https://github.com/jsumners) [mcollina](https://github.com/mcollina) [nwoltman](https://github.com/nwoltman) [starptech](https://github.com/starptech) [trivikr](https://github.com/trivikr)
 
 ---
 <!--
