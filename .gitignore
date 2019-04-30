@@ -69,5 +69,3 @@ typings/
 # lock files
 yarn.lock
 package-lock.json
-
-index.html
