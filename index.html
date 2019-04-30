@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+  <title>Diapo</title>
+  <link href='diapo.css' rel='stylesheet' type='text/css' />
+  <style>
+    .new-shiny { background: #aaaaaa; }
+  </style>
+  <script src='diapo.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body class='dark'>
+  <section id="diapo-progress-bar-container">
+    <div id="diapo-progress-bar"></div>
+  </section>
+  <div data-bodyclass="intro-background" class="align-right border-right copyright-right"><!--
+bodyclass intro-background
+class align-right border-right copyright-right
+-->
+
+<h1 id="building-a-future-proof-framework">Building a future proof framework</h1>
+<p><a href="https://twitter.com/delvedor">@delvedor</a></p>
+</div>
+<div  class="center center-image copyright-right"><!--
+class center center-image copyright-right
+-->
+
+<p><img src="images/delvedor.png" alt="delvedor"></p>
+<p><a href="https://twitter.com/delvedor">@delvedor</a></p>
+</div>
+<div  class="elastic-logo small"><!--
+class elastic-logo small
+-->
+
+<p><img src="images/elastic-logo-light.png" alt="elastic-logo-light">
+<img src="images/elastic-logo-dark.png" alt="elastic-logo-dark"></p>
+</div>
+<div  class="small"><!--
+class small
+-->
+
+<h1 id="ciao-">Ciao<em>!</em></h1>
+</div>
+<div  class="small"><!--
+class small
+-->
+
+<h1 id="we-ve-built-a-new-framework-">We’ve built a <em>new framework</em>!</h1>
+</div>
+<div  class="small"><!--
+class small
+-->
+
+<h1 id="under-the-hood-we-are-using-express-">Under the hood we are using <em>Express</em>.</h1>
+</div>
+<div  class="center center-image"><!--
+class center center-image
+-->
+
+<p><img src="images/astonished.gif" alt="astonished"></p>
+</div>
+<div  class="technical-debt boxed-em"><!--
+class technical-debt boxed-em
+-->
+
+<h1 id="or-you-die-as-innovator-">Or you die as <em>innovator</em>,</h1>
+<h1 id="or-you-live-long-enough-to-become-the-technical-debt-">or you live long enough to become the <em>technical debt</em>.</h1>
+</div>
+<div  class="small nobreak"><!--
+class small nobreak
+-->
+
+<p>Can we avoid that<em>?</em></p>
+</div>
+<div><h1 id="two-years-ago-">Two years ago<em>.</em></h1>
+</div>
+<div><h1 id="express-hapi-restify-koa-micro-connect-take-five-total-js">Express Hapi Restify Koa Micro Connect take-five total.js</h1>
+</div>
+<div  class="nobreak"><!--
+class nobreak
+-->
+
+<p><em><code>fast</code></em><code>-json-stringify</code></p>
+</div>
+<div  class="row json-faster"><!--
+class row json-faster
+-->
+
+<pre><code class="language-js">const FJS = require(&#39;fast-json-stringify&#39;)
+
+const stringify = FJS({
+  type: &#39;object&#39;,
+  properties: {
+    firstName: { type: &#39;string&#39; },
+    lastName: { type: &#39;string&#39; },
+    age: { type: &#39;integer&#39; }
+  }
+})
+
+console.log(stringify({
+  firstName: &#39;Tomas&#39;,
+  lastName: &#39;Della Vedova&#39;,
+  age: 25
+}))</code></pre>
+<h1 id="2-3x-faster">2-3x <em>faster</em></h1>
+</div>
+<div data-bodyclass="fastify-background" class="copyright-right"><!--
+bodyclass fastify-background
+class copyright-right
+-->
+<p><img src="images/fastify-white-landscape.png" alt="fastify-logo"></p>
+<p><a href="http://fastify.io/">fastify.io</a></p>
+</div>
+<div  class="copyright-right"><!--
+class copyright-right
+-->
+
+<pre><code class="language-js">const fastify = require(&#39;fastify&#39;)()
+
+fastify.get(&#39;/&#39;, async (request, reply) =&gt; {
+  return { hello: &#39;world&#39; }
+})
+
+fastify.listen(3000)</code></pre>
+<p><a href="http://fastify.io/">fastify.io</a></p>
+</div>
+<div><h1 id="design-goals-">Design goals<em>.</em></h1>
+</div>
+<div><p>Design goals<em>.</em></p>
+<h1 id="built-for-speed">Built for <em>speed</em></h1>
+</div>
+<div  class="center center-image"><!--
+class center center-image
+-->
+
+<p><img src="images/benchmarks.png" alt="benchmarks"></p>
+</div>
+<div><p>Design goals<em>.</em></p>
+<h1 id="almost-zero-overhead">Almost zero <em>overhead</em></h1>
+</div>
+<div  class="small"><!--
+class small
+-->
+
+<p><strong>Overhead</strong>:<br/>the <em>price</em> you are paying for a set of <em>features</em>.</p>
+</div>
+<div  class="center center-image"><!--
+class center center-image
+-->
+
+<p><img src="images/flame-bare.png" alt="flame-bare"></p>
+</div>
+<div  class="center center-image"><!--
+class center center-image
+-->
+
+<p><img src="images/flame-fastify.png" alt="flame-fastify"></p>
+</div>
+<div  class="center center-image"><!--
+class center center-image
+-->
+
+<p><img src="images/flame-express.png" alt="flame-express"></p>
+</div>
+<div><p>Design goals<em>.</em></p>
+<h1 id="as-light-as-possible">As <em>light</em> as possible</h1>
+</div>
+<div  class="small"><!--
+class small
+-->
+
+<p>Every feature we implement in core is something that <em>we must maintain</em>.</p>
+</div>
+<div  class="small"><!--
+class small
+-->
+
+<p>Change it in the future could lead to massive <em>breaking changes</em> for the community.</p>
+</div>
+<div  class="small nobreak"><!--
+class small nobreak
+-->
+
+<p>How can we fix this<em>?</em></p>
+</div>
+<div><p>Design goals<em>.</em></p>
+<h1 id="extensible-via-plugins">Extensible via <em>plugins</em></h1>
+</div>
+<div><pre><code class="language-js">fastify.register(
+  require(&#39;my-plugin&#39;),
+  { options }
+)</code></pre>
+</div>
+<div  class="row async-plugin"><!--
+class row async-plugin
+-->
+
+<pre><code class="language-js">function myPlugin (fastify, opts, next) {
+  // register other plugins
+  fastify.register(...)
+
+  // add hooks
+  fastify.addHook(...)
+
+  // add decorator
+  fastify.decorate(...)
+
+  // add routes
+  fastify.route(...)
+
+  next()
+}
+
+module.exports = myPlugin</code></pre>
+<h3 id="async-await-br-is-supported-as-well-"><em>async await</em><br/>is supported as well!</h3>
+</div>
+<div  class="center small-image"><!--
+class center small-image
+-->
+
+<h1 id="plugins-architecture">Plugins: <em>Architecture</em></h1>
+<p><img src="images/dag.png" alt="dag"></p>
+</div>
+<div  class="center small-image"><!--
+class center small-image
+-->
+
+<h1 id="plugins-encapsulation">Plugins: <em>Encapsulation</em></h1>
+<p><img src="images/dag-decorate.png" alt="dag-decorate"></p>
+</div>
+<div><h3 id="exposing-functionality-to-parents">Exposing functionality to <em>parents</em></h3>
+<pre><code class="language-js">const fp = require(&#39;fastify-plugin&#39;)
+
+async function myPlugin (fastify, options) {
+  fastify.decorate(&#39;util&#39;, yourAwesomeUtility)
+  // now you can use it with `fastify.util`
+}
+
+module.exports = fp(myPlugin)</code></pre>
+</div>
+<div  class="center small-image"><!--
+class center small-image
+-->
+
+<h1 id="plugins-encapsulation">Plugins: <em>Encapsulation</em></h1>
+<p><img src="images/dag-fp-encapsulate.png" alt="dag-fp-encapsulate"></p>
+</div>
+<div  class="center small-image"><!--
+class center small-image
+-->
+
+<h1 id="plugins-real-world">Plugins: Real world</h1>
+<p><img src="images/plugin-real-world.png" alt="plugin-real-world"></p>
+</div>
+<div><h3 id="encapsulation-enables-many-great-things"><em>Encapsulation</em> enables many great things</h3>
+<h3 id="such-as-custom-log-level-per-plugin">such as custom <code>log-level</code> per plugin</h3>
+<br/>
+
+<pre><code class="language-js">const fastify = require(&#39;fastify&#39;)()
+
+fastify.register(require(&#39;./api/v1&#39;), {
+  prefix: &#39;/v1&#39;,
+  logLevel: &#39;error&#39;
+})
+
+fastify.register(require(&#39;./api/v2&#39;), {
+  prefix: &#39;/v2&#39;,
+  logLevel: &#39;debug&#39;
+})</code></pre>
+</div>
+<div  class="boxed-em"><!--
+class boxed-em
+-->
+
+<h1 id="everything-is-a-plugin"><em>Everything</em> is a plugin</h1>
+</div>
+<div><p>Design goals<em>.</em></p>
+<h1 id="developer-experience">Developer <em>experience</em></h1>
+</div>
+<div  class="nobreak"><!--
+class nobreak
+-->
+
+<p>API that is <em>easy to use</em> and understand;</p>
+<br/>
+
+<p>Extensive and quality <em>documentation</em> &amp; <em>tooling</em>;</p>
+<br/>
+
+<p><em>Painless</em> transition from monolith to microservices;</p>
+<br/>
+
+<p><em>Responsive</em> to issues and questions.</p>
+</div>
+<div><p>Design goals<em>.</em></p>
+<h1 id="long-term-support"><em>Long</em> Term Support</h1>
+</div>
+<div  class="nobreak"><!--
+class nobreak
+-->
+
+<p>Minimum <em>six months</em> of active development<br/>from the release date;</p>
+<br/>
+
+<p>Additional six months of <em>security updates</em><br/>after a new Major release;</p>
+<br/>
+
+<p>Part of the Node.js&#39;s <em>CITGM</em> suite.</p>
+</div>
+<div><p>Design goals<em>.</em></p>
+<h1 id="open-open-source"><em>OPEN</em> open source</h1>
+</div>
+<div  class="small"><!--
+class small
+-->
+
+<p>Individuals making significant and valuable <em>contributions</em> are given commit-access to the project to contribute as they see fit<em>.</em></p>
+<br/>
+
+<p><a href="http://openopensource.org/">openopensource.org</a></p>
+</div>
+<div><p>Design goals<em>.</em></p>
+<h1 id="security"><em>Security</em></h1>
+</div>
+<div  class="small"><!--
+class small
+-->
+
+<p>Mandatory <em>2FA</em> for every member of the team;</p>
+<br/>
+
+<p>Every PR should be <em>reviewed</em> and <em>approved</em> by at least one member of the team;</p>
+<br/>
+
+<p>Every dependency should pass our <em>code review</em>;</p>
+<br/>
+
+<p>Only two persons are allowed to <em>release</em> a new version.</p>
+</div>
+<div><h1 id="two-years-after-">Two years after<em>.</em></h1>
+</div>
+<div><h1 id="fastify-v2-br-del-style-color-e61a7a-span-style-color-fff-is-coming-span-del-has-come-"><em>Fastify</em> <code>v2</code><br/><del style="color: #e61a7a"><span style="color: #fff">is coming</span></del> has come<em>.</em></h1>
+<p><a href="https://fastify.rocks/v2">fastify.rocks/v2</a></p>
+</div>
+<div><h1 id="community-impact-">Community impact<em>.</em></h1>
+</div>
+<div  class="center-image"><!--
+class center-image
+-->
+
+<p><img src="images/global-downloads.png" alt="global-downloads"></p>
+</div>
+<div  class="center-image"><!--
+class center-image
+-->
+
+<p><img src="images/npm-keyword.png" alt="npm-keyword"></p>
+</div>
+<div  class="small"><!--
+class small
+-->
+
+<h1 id="currently-there-are-87-officially-recognized-plugins">Currently, there are <em>87</em> officially recognized plugins</h1>
+</div>
+<div  class="small"><!--
+class small
+-->
+
+<h1 id="34-maintained-by-the-core-team"><em>34</em> maintained by the core team</h1>
+</div>
+<div  class="boxed-em small"><!--
+class boxed-em small
+-->
+
+<h1 id="one-plugin-every-10-days">One plugin <em>every 10 days</em></h1>
+</div>
+<div  class="small"><!--
+class small
+-->
+
+<h1 id="-8700-stars"><em>≥ 8700</em> stars</h1>
+</div>
+<div  class="small"><!--
+class small
+-->
+
+<h1 id="110-unique-contributors"><em>110</em> unique contributors</h1>
+</div>
+<div  class="small"><!--
+class small
+-->
+
+<h1 id="-450-forks"><em>≥ 450</em> forks</h1>
+</div>
+<div  class="small"><!--
+class small
+-->
+
+<h1 id="-95-releases"><em>≥ 95</em> releases</h1>
+</div>
+<div  class="small"><!--
+class small
+-->
+
+<h1 id="-1800-commits"><em>≥ 1800</em> commits</h1>
+</div>
+<div  class="small team"><!--
+class small team
+-->
+
+<h1 id="core-team-10-awesome-people">Core team: <em>10 awesome people</em></h1>
+<br/>
+
+<p><a href="https://github.com/allevo">allevo</a> <a href="https://github.com/cemremengu">cemremengu</a> <a href="https://github.com/delvedor">delvedor</a> <a href="https://github.com/evanshortiss">evanshortiss</a> <a href="https://github.com/lmammino">lmammino</a> <a href="https://github.com/jsumners">jsumners</a> <a href="https://github.com/mcollina">mcollina</a> <a href="https://github.com/nwoltman">nwoltman</a> <a href="https://github.com/starptech">starptech</a> <a href="https://github.com/trivikr">trivikr</a></p>
+</div>
+<div data-bodyclass="intro-background" class="small"><!--
+bodyclass intro-background
+class small
+-->
+
+<h1 id="did-we-make-it-">Did we make it<em>?</em></h1>
+</div>
+<div data-bodyclass="intro-background" class="small"><!--
+bodyclass intro-background
+class small
+-->
+
+<h1 id="let-us-know-">Let us know<em>!</em></h1>
+</div>
+<div data-bodyclass="intro-background" class="copyright-right"><!--
+bodyclass intro-background
+class copyright-right
+-->
+
+<h1 id="thanks-">Thanks<em>!</em></h1>
+<p><a href="http://fastify.io/">fastify.io</a>
+<br/>
+<a href="https://twitter.com/delvedor">@delvedor</a></p>
+</div>
+</body>
+</html>
